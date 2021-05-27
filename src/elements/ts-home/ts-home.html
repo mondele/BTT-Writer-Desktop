@@ -233,17 +233,17 @@
                 </template>
                 <template is="dom-if" if="{{projectlist.length}}">
                     <div id="sort">
-                        <paper-dropdown-menu id="sortorder" label="Columns To Sort By">
+                        <paper-dropdown-menu id="sortorder" label="[[locale.columns1]]">
                             <paper-listbox id="sort1" class="dropdown-content">
-                                <paper-item on-tap="sortproj">Project then Language</paper-item>
-                                <paper-item on-tap="sortlang">Language then Project</paper-item>
-                                <paper-item on-tap="sortprog">Progress then Project</paper-item>
+                                <paper-item on-tap="sortproj">{{locale.sort1}}</paper-item>
+                                <paper-item on-tap="sortlang">{{locale.sort2}}</paper-item>
+                                <paper-item on-tap="sortprog">{{locale.sort3}}</paper-item>
                             </paper-listbox>
                         </paper-dropdown-menu>
-                        <paper-dropdown-menu id="projectsort" label="Sort Project Column By">
+                        <paper-dropdown-menu id="projectsort" label="{{locale.columns2}}">
                             <paper-listbox id="sort2" class="dropdown-content">
-                                <paper-item on-tap="sortbible">Bible Order</paper-item>
-                                <paper-item on-tap="sortalpha">Alphabetical Order</paper-item>
+                                <paper-item on-tap="sortbible">{{locale.bible_order}}</paper-item>
+                                <paper-item on-tap="sortalpha">{{locale.abc_order}}</paper-item>
                             </paper-listbox>
                         </paper-dropdown-menu>
                     </div>
@@ -264,7 +264,7 @@
                                     <span class="smalltext bigspan">[[project.target_language.name]]</span>
                                     <span class="smallspan"><ts-completion-icon percent="[[project.completion]]"></ts-completion-icon></span>
                                 </div>
-                                <iron-icon class="info" icon="info" on-tap="openinfo" title="details"></iron-icon>
+                                <iron-icon class="info" icon="info" on-tap="openinfo" title="{{locale.details}}"></iron-icon>
                             </div>
                         </template>
                     </div>
@@ -288,13 +288,13 @@
         </paper-dialog>
 
         <paper-dialog id="confirmchange" class="popup" modal="true" entry-animation="scale-up-animation" exit-animation="scale-down-animation">
-            <h2>File already exists</h2>
+            <h2>{{locale.file_exists}}</h2>
             <div>
-                <p>This project already exists.  If you continue with this change, the two projects will be merged together.</p>
+                <p>{{locale.merge_warning}}</p>
             </div>
             <div class="buttons">
-                <paper-button on-tap="cancelconfirm">Cancel</paper-button>
-                <paper-button on-tap="firechange">Continue</paper-button>
+                <paper-button on-tap="cancelconfirm">{{locale.cancel}}</paper-button>
+                <paper-button on-tap="firechange">{{locale.continue}}</paper-button>
             </div>
         </paper-dialog>
 
@@ -368,7 +368,7 @@
         },
 
         checkicon: function (projectmeta) {
-            return projectmeta.project.id === "obs" || projectmeta.project_type_class === "extant" ? 
+            return projectmeta.project.id === "obs" || projectmeta.project_type_class === "extant" ?
                 '../elements/ts-icons/uw-icon-small.png' : '../elements/ts-icons/uw-project-icon.png';
         },
 
