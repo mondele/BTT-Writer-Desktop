@@ -21,7 +21,7 @@
         var splash = document.getElementById('splash');
         var pack = require('../../package');
         var version = pack.version.split('.').slice(0,-1).join('.');
-        var versiontext = "Version " + version + " Build " + pack.build;
+        var versiontext = "Version " + version + " Build " + pack.buildNo;
 
         splash.content = {title: "BTT Writer", subtitle: versiontext, message: "Loading main window..."};
 

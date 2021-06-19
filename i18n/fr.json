@@ -1,0 +1,86 @@
+{
+  "__file1": "ts-home.html",
+    "app_name": "BTT Writer (test)",
+    "home_title": "Vos Projets de Traduction",
+    "welcome": "Bienvenu(e)!",
+    "home_welcome1": "Voici votre écran d'accueil. Quand vous auriez de projets de traduction sur cet appareil, ils apparaisseront ici.",
+    "home_welcome2": "Vous pouvez créer un nouveau projet n'importe quand en cliquant sur le bouton bleu en haut-droit.",
+    "start_new_project": "Créer nouveau projet",
+
+    "columns1": "Colonnes à Trier",
+    "sort1": "Projet Avant Langue",
+    "sort2": "Langue Avant Projet",
+    "sort3": "Progres Avant Projet",
+    "columns2": "Trier la Colonne des Projets Par",
+    "bible_order": "Ordre Biblique",
+    "abc_order": "Ordre Alphabétique",
+
+    "details": "detailles",
+
+    "project": "Projet",
+    "type": "Genre",
+    "language": "Langue",
+    "progress": "Progres",
+
+    "delete": "Effacer",
+    "confirm_delete_translation": "Vous allez éliminer difinitivement la traduction. Continuez?",
+    "cancel": "Annuler",
+    "confirm": "Vérifier",
+
+    "file_exists": "Fichier existe déjà",
+    "merge_warning": "Ce projet existe déjà. Si vous continuez avec ce changement, le deux projets seront fusionnés.",
+
+  "__file2": "ts-project-info.html",
+    "target_language": "Langue Cible",
+    "translators": "Traducteurs",
+    "dismiss": "Dismiss",
+    "yes": "Oui",
+    "no": "Non",
+    "print": "imprimer",
+    "review": "reviser",
+    "upload_export": "télécharger/exporter",
+
+  "__file3": "ts-conflict.html",
+    "project_change": "Changement du Projet Détecté",
+    "change_warning1": "Il y existe des changements pour votre projet de traduction ci-dessus, sur votre compte.",
+    "change_warning2": "Voudriez-vous les importer maintenant?",
+
+  "__file4": "ts-container-confirm.html",
+    "source_exists": "Source Existe Déjà",
+    "source_warning": "Voulez vous écraser le texte source existant?",
+
+  "__file5": "ts-export-options.html",
+    "upload_options": "Parametres de Téléchargement/Exportation",
+    "to_server": "Télécharger sur serveur",
+      "to_server_text": "Télécharge le projet sur votre compte - le contenu sera desormais disponible pour le téléchargement par d'autres traducteurs, être fusionnés avec d'autres projets, ou utilisé comme sauvegarde en ligne",
+    "to_usfm": "Exporter en USFM",
+      "to_usfm_text": "Crée un fichier .usfm de votre projet",
+    "to_text": "Exporter en texte",
+      "to_text_text": "Crée un fichier .zip de votre projet",
+    "to_pdf": "Exporter en PDF",
+      "to_pdf_text": "Crée un fichier .pdf de votre projet",
+    "to_project": "Exporter en Fichier Projet",
+      "to_project_text": "Crée une copie de votre projet",
+
+    "__file6": "ts-feedback.html",
+      "feedback": "Réaction",
+      "internet_warning": "On va utiliser votre reseau internet",
+      "describe_problem": "Expliquez le problème que vous rencontrez",
+
+    "__file7": "ts-import-confirm.html",
+      "project_exists": "Le Projet Existe Déjà",
+      "project_exists_2": "Ce projet existe déjà sur l'appareil. Comment preferez-vous proceder?",
+      "merge": "Fusionnez les Projets",
+      "overwrite": "Ecrasez le Projet sur cet appareil",
+
+    "__file8": "ts-options-menu.html",
+      "setup_title": "Configurez votre profil d'utilisateur avec une des options ci-desous.",
+
+    "status": "Situation",
+    "idle": "Inactif",
+    "update": "Mettre à Jour",
+    "import": "Importez",
+    "translationAcademy": "translationAcademy",
+    "logout": "Se Déconnecter",
+    "settings": "Parametres"
+  }

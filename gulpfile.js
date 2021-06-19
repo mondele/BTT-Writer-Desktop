@@ -157,7 +157,7 @@ function release(done){
     const releaseWin = function (arch, os) {
         // TRICKY: the iss script cannot take the .exe extension on the file name
         var file = `BTT-Writer-${p.version}-${p.build}-win-x${arch}`;
-        var cmd = `iscc scripts/win_installer.iss /DArch=${arch == '64' ? 'x64' : 'x86'} /DRootPath=../ /DVersion=${p.version} /DBuild=${p.build} /DGitVersion=${gitVersion} /DDestFile=${file} /DDestDir=${RELEASE_DIR} /DBuildDir=${BUILD_DIR}`;
+        var cmd = `iscc scripts/win_installer.iss /DArch=${arch == '64' ? 'x64' : 'x86'} /DRootPath=../ /DVersion=${p.version} /DBuild=${p.buildNo} /DGitVersion=${gitVersion} /DDestFile=${file} /DDestDir=${RELEASE_DIR} /DBuildDir=${BUILD_DIR}`;
         return new Promise(function(resolve, reject) {
             exec(cmd, function(err, stdout, stderr) {
                 if(err) {
