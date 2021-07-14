@@ -84,13 +84,13 @@
                 <span class="optiontitle">{{locale.to_usfm}}<iron-icon class="icon" icon="info" title={{locale.to_usfm_text}}></iron-icon></span>
             </div>
             <div class$="[[checkmarkdownclass(currentproject.projectmeta.project_type_class, currentproject.projectmeta.format, currentproject.projectmeta.source_translations)]]" on-tap="checkusfm">
-                <span class="optiontitle">Export to Text Files<iron-icon class="icon" icon="info" title="Creates a .zip file of your project"></iron-icon></span>
+                <span class="optiontitle">{{locale.to_text}}<iron-icon class="icon" icon="info" title="{{locale.to_text_text}}"></iron-icon></span>
             </div>
             <div class$="[[checkprintclass(currentproject.projectmeta.project_type_class, currentproject.projectmeta.source_translations)]]" on-tap="checkprint">
-                <span class="optiontitle">Export to PDF File<iron-icon class="icon" icon="info" title="Creates a .pdf file of your project"></iron-icon></span>
+                <span class="optiontitle">{{locale.to_pdf}}<iron-icon class="icon" icon="info" title="{{locale.to_pdf_text}}"></iron-icon></span>
             </div>
             <div class="option" on-tap="project">
-                <span class="optiontitle">Export Project File<iron-icon class="icon" icon="info" title="Creates a copy of your project file"></iron-icon></span>
+                <span class="optiontitle">{{locale.to_project}}<iron-icon class="icon" icon="info" title="{{locale.to_project_text}}"></iron-icon></span>
             </div>
         </div>
         <div id="footer">
