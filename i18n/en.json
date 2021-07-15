@@ -41,6 +41,7 @@
       "print": "print",
       "review": "review",
       "upload_export": "upload/export",
+      "resource_type": "Resource type",
 
     "__file3": "ts-conflict.html",
       "project_change": "Project Change Detected",

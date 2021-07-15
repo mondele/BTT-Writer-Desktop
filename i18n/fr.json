@@ -1,7 +1,7 @@
 {
   "__file1": "ts-home.html",
     "app_name": "BTT Writer (test)",
-    "home_title": "Vos Projets de Traduction",
+    "home_title": "Vos Projets de Traduction!",
     "welcome": "Bienvenu(e)!",
     "home_welcome1": "Voici votre écran d'accueil. Quand vous auriez de projets de traduction sur cet appareil, ils apparaisseront ici.",
     "home_welcome2": "Vous pouvez créer un nouveau projet n'importe quand en cliquant sur le bouton bleu en haut-droit.",
@@ -39,6 +39,7 @@
     "print": "imprimer",
     "review": "reviser",
     "upload_export": "télécharger/exporter",
+    "resource_type": "Type de ressource",
 
   "__file3": "ts-conflict.html",
     "project_change": "Changement du Projet Détecté",
