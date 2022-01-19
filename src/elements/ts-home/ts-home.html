@@ -225,9 +225,9 @@
             <div id="body">
                 <template is="dom-if" if="{{!projectlist.length}}">
                     <div id="welcome">
-                        <p>{{locale.welcome}}</p>
+                        <p>{{locale.welcome}} This is translated text</p>
                         <p>{{locale.home_welcome1}}</p>
-                        <p>{{locale.home_welcome2}}</p>
+                        <p>{{locale.home_welcome2}}</br> End of translated text.</p>
                     </div>
                     <paper-button raised id="start" on-tap="startnew">{{locale.start_new_project}}</paper-button>
                 </template>
