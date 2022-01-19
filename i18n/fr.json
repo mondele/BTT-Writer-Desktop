@@ -1,7 +1,7 @@
 {
   "__file1": "ts-home.html",
     "app_name": "BTT Writer (test)",
-    "home_title": "Vos Projets de Traduction!",
+    "home_title": "Vos Projets de Traduction",
     "welcome": "Bienvenu(e)!",
     "home_welcome1": "Voici votre écran d'accueil. Quand vous auriez de projets de traduction sur cet appareil, ils apparaisseront ici.",
     "home_welcome2": "Vous pouvez créer un nouveau projet n'importe quand en cliquant sur le bouton bleu en haut-droit.",
@@ -73,6 +73,12 @@
       "project_exists_2": "Ce projet existe déjà sur l'appareil. Comment preferez-vous proceder?",
       "merge": "Fusionnez les Projets",
       "overwrite": "Ecrasez le Projet sur cet appareil",
+
+    "__file8": "ts-new.html",
+      "new_project": "Projet Nouveau",
+
+    "__file9": "ts-language-menu.html",
+      "choose_language": "Choisir de langue cible",
 
     "status": "Situation",
     "idle": "Inactif",

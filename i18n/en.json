@@ -77,6 +77,12 @@
       "merge": "Merge Projects",
       "overwrite": "Overwrite Project",
 
+    "__file8": "ts-new.html",
+      "new_project": "New Project",
+
+    "__file9": "ts-language-menu.html",
+      "choose_language": "Choose target language",
+
     "status": "Status",
     "idle": "Idle",
     "update": "Update",
