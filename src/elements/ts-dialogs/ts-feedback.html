@@ -51,10 +51,10 @@
 
         <div id="header">
             <h2>Feedback</h2>
-            <p><iron-icon icon="notification:wifi"></iron-icon> This will use your internet connection</p>
+            <p><iron-icon icon="notification:wifi"></iron-icon> {{locale.internet_warning}}</p>
         </div>
         <div id="body">
-            <input is="iron-input" bind-value="{{feedback}}" placeholder="Describe the problem you are experiencing">
+            <input is="iron-input" bind-value="{{feedback}}" placeholder="{{locale.describe_problem}}">
         </div>
         <div id="footer">
             <paper-button on-tap="close">Cancel</paper-button>
