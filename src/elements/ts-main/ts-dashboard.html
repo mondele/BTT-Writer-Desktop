@@ -168,7 +168,7 @@
           <ts-terms data-route="terms"></ts-terms>
       </neon-animated-pages>
       <div id="statusbar">
-          <span>Status1: </span><span id="message">{{message}}</span>
+          <span>{{locale.status}}: </span><span id="message">{{message}}</span>
       </div>
 
       <paper-dialog id="print" class="popup" modal="true" entry-animation="scale-up-animation" exit-animation="scale-down-animation">
@@ -288,6 +288,10 @@
           options: {
               type: Object,
               value: {}
+          },
+          locale: {
+            type: Object,
+            value: {}
           },
           message: {
               type: String,
@@ -1364,6 +1368,8 @@
 
       ready: function() {
           var mythis = this;
+
+          this.set('locale', App.locale.dictionary);
 
           return App.gitManager.verifyGit()
               .then(function (version) {

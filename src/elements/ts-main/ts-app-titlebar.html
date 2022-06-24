@@ -83,7 +83,7 @@
 
         <header>
             <span class="title">BTT Writer</span>
-            <span class$="[[loginclass(currentuser.full_name)]]"><span>{{locale.currentuser}}</span><span>{{currentuser.full_name}}</span><span class="link" on-tap="logout">({{locale.logout}})</span></span>
+            <span class$="[[loginclass(currentuser.full_name)]]"><span>{{locale.currentuser}}</span> <span>{{currentuser.full_name}}</span><span class="link" on-tap="logout">({{locale.logout}})</span></span>
             <div class="window-buttons">
                 <button on-tap="minimizeWindow">
                     <iron-icon icon="titlebar:minimize" title="minimize"></iron-icon>
@@ -110,12 +110,11 @@
         properties: {
             currentuser: {
                 type: Object,
-                value: {}
-            },
+              },
             locale: {
-              type: Object,
-              value: {}
-            },
+                type: Object,
+                value: {}
+              },
             busy: {
                 type: Boolean,
                 value: false

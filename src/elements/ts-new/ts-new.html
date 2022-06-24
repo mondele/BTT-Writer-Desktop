@@ -214,6 +214,10 @@
                 type: Object,
                 value: {}
             },
+            locale: {
+                type: Object,
+                value: {}
+            },
             animationConfig: {
                 value: function () {
                     return {
@@ -362,7 +366,7 @@
         },
 
         ready: function() {
-
+            this.set('locale', App.locale.dictionary);
         }
 
     });
