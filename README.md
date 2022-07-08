@@ -22,7 +22,7 @@ More information and assistance can be found at https://techadvancement.com
 
 # Development / Contributing
 
-## Quick Start
+##  Quick Start
 First make sure you have [NodeJS](https://nodejs.org/) installed (choose the Current, not LTS). Then, in your terminal/command line window:
 
 	$ npm install -g bower
@@ -37,7 +37,7 @@ After the repository has been cloned to your computer run the following command 
 
 ### Commands
 =======
-###Commands
+### Commands
 >>>>>>> decd6bcd (Minor updates to readme and package.json removing legacy references to pre-forked project. Also updated Linux launcher and put installation instructions in the Readme.)
 The following commands are available from within the project directory:
 
