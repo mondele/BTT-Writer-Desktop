@@ -33,7 +33,6 @@ After the repository has been cloned to your computer run the following command 
 
     $ npm install && bower install
 
-<<<<<<< HEAD
 		Alternatively, a Docker build pipeline and makefile are provided to make building and running easier.
 
 ### Commands
