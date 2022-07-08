@@ -77,6 +77,7 @@
 
 	"__folder2": "ts-home",
 		"__file11": "ts-completion-icon.html",
+
 		"__file12": "ts-home.html",
       "app_name": "BTT Writer",
       "home_title": "Your Translation Projects",
@@ -119,9 +120,9 @@
       "dismiss": "Dismiss",
       "yes": "Yes",
       "no": "No",
-      "print": "print",
-      "review": "review",
-      "upload_export": "upload/export",
+      "print": "Print",
+      "review": "Review",
+      "upload_export": "Upload/Export",
       "resource_type": "Resource type",
       "change": "Change",
 
@@ -217,8 +218,27 @@
       "currentuser": "Current User:",
 
 		"__file28": "ts-dashboard.html",
+      "conflicts": "Chunk Conflicts",
+        "single_chunk_conflict_message": "'There is ' + conflicts.length + ' chunk that contains a new conflict that needs your attention.'",
+        "multiple_chunk_conflict_message": "'There are ' + conflicts.length + ' chunks that contain new conflicts that need your attention.'",
+      "import_complete": "Import Complete",
+        "import_complete_text": "Your project has been successfully imported.",
+      "import_failed": "Import Failed",
+        "import_failed_text": "An error occurred while importing your project.",
+      "updating_target_status": "Updating List of Target Languages. This may take a while. Please wait...",
+      "number_target_updates": "diff + ' Target languages have been added.'",
+      "no_target_updates": "No Target Languages have been added.",
+      "one_target_update": "1 Target Language has been added.",
+      "update_complete": "Update Complete",
+      "update_error": "An error occurred while updating",
+      "connection_error": "Unable to connect to server",
+      "read_error": "Lost connection to server",
+      "update_failed": "Update Failed",
+      "source_update_status": "Updating List of Source Texts. This may take a while. Please wait ...",
+
+
 		"__file29": "ts-splash.html",
-    
+
 	"__folder6": "ts-new",
 		"__file30": "ts-book-menu.html",
 		"__file31": "ts-language-menu.html",
@@ -276,7 +296,13 @@
 		"__folder13": "ts-conflict-mode",
     	"__file51": "ts-conflict-card.html",
    		"__file52": "ts-conflict-mode.html",
+
   		"__file53": "ts-nosource-mode.html",
+        "choose_source": "Choose source translation(s) to begin reading and translating",
+        "requires_internet": "Requires an Internet Connection",
+        "updating_source_status": "Updating source data. Please wait...",
+        "activating_source": "Activating this source. Please wait...",
+
 		"__folder14": "ts-read-mode",
       "__file54": "ts-read-card.html",
       "__file55": "ts-read-mode.html",
@@ -292,7 +318,16 @@
    		"__file62": "ts-note-marker.html",
    		"__file63": "ts-source-card.html",
    		"__file64": "ts-source-chunk.html",
+
    		"__file65": "ts-source-modal.html",
+        "choose_source_placeholder": "Choose source translations",
+        "selected_max_3": "Selected (maximum: 3)",
+        "available": "Available",
+        "available_online":"Available Online",
+        "downloading_source": "Downloading source data. Please wait...",
+        "exit_to_update": "Exit to Update Source Text List",
+
+
    		"__file66": "ts-source-tab.html",
 		"__folder18": "ts-target",
    		"__file67": "ts-target-conflict.html",
@@ -303,7 +338,12 @@
    		"__file72": "ts-target-words.html",
    		"__file73": "ts-verse-marker.html",
   		"__file74": "ts-translate.html",
+
   		"__file75": "ts-translate-sidebar.html",
+        "home": "Home",
+        "project_review": "Project Review",
+        "search": "Search",
+
   "__folder19": "ts-updates",
     	"__file76": "ts-update-level-one.html",
     	"__file77": "ts-update-level-two.html",
