@@ -101,7 +101,10 @@
         is: 'ts-import-options',
 
         properties: {
-
+            locale: {
+              type: Object,
+              value: {}
+            }
         },
 
         project: function () {
@@ -123,6 +126,7 @@
         ready: function () {
             var shell = require('electron').shell;
             var links = this.$.header.getElementsByTagName('a');
+            this.set('locale', App.locale.dictionary);
             for (var i = 0; i < links.length; i++) {
                 links[i].addEventListener('click', function (event) {
                     event.preventDefault();

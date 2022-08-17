@@ -72,7 +72,7 @@
           "update_source_list_text": "Met à jour uniquement la liste des sources. Ne télécharge pas de nouvelles sources",
           "download_source": "Télécharger les Textes Source Disponibles",
           "download_source_text": "Choisissez les sources à télécharger après la mise à jour de la liste",
-          "update_targets": "Actualiser la liste des Langues Cibles disponibles",
+          "update_targets": "Actualiser la liste des Langues Cibles Disponibles",
           "update_targets_text": "Ajoutera de nouvelles langues cibles à la liste disponible",
 
         "__folder2": "ts-home",

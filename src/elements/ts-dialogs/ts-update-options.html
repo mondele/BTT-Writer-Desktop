@@ -108,7 +108,10 @@
         is: 'ts-update-options',
 
         properties: {
-
+            locale: {
+              type: Object,
+              value: {}
+            }
         },
 
         language: function () {
@@ -126,6 +129,7 @@
         ready: function () {
             var shell = require('electron').shell;
             var links = this.getElementsByTagName('a');
+            this.set('locale', App.locale.dictionary);
             for (var i = 0; i < links.length; i++) {
                 links[i].addEventListener('click', function (event) {
                     event.preventDefault();
