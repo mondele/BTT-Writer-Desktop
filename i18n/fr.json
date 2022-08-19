@@ -347,6 +347,10 @@
           	"__file78": "ts-update-results.html",
             "__file79": "ts-updates.html",
 
+            "__folder20": "config",
+                "__file80": "user-setting.json",
+                  "glmode_main": "Mode de Gateway Language",
+
     "status": "Situation",
     "idle": "Inactif",
     "update": "Actualiser",

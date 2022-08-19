@@ -242,6 +242,8 @@
 	"__folder6": "ts-new",
 		"__file30": "ts-book-menu.html",
 		"__file31": "ts-language-menu.html",
+      "import_project": "Import Project",
+      "change_language": "Change Language",
       "choose_language": "Choose target language",
 
 		"__file32": "ts-new.html",
@@ -338,6 +340,7 @@
    		"__file72": "ts-target-words.html",
    		"__file73": "ts-verse-marker.html",
   		"__file74": "ts-translate.html",
+        "loading_project": "",
 
   		"__file75": "ts-translate-sidebar.html",
         "home": "Home",
@@ -349,6 +352,10 @@
     	"__file77": "ts-update-level-two.html",
     	"__file78": "ts-update-results.html",
       "__file79": "ts-updates.html",
+
+  "__folder20": "config",
+      "__file80": "user-setting.json",
+        "glmode_main": "Gateway Language Mode",
 
     "status": "Status",
     "idle": "Idle",
