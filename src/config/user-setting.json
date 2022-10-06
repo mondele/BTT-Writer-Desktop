@@ -1,7 +1,7 @@
 [
     {
         "name": "glmode",
-        "mainText": "Gateway Language Mode",
+        "mainText": "locale.choose_source",
         "helpText": "Display additional translation options for gateway languages",
         "value": false,
         "group": "general",
@@ -140,16 +140,16 @@
         "value": {"name": "WACS"},
         "options": [
             {
-                "name": "WACS", 
-                "dataserver": "https://wacs.bibletranslationtools.org", 
-                "mediaserver": "https://api.bibletranslationtools.org", 
+                "name": "WACS",
+                "dataserver": "https://wacs.bibletranslationtools.org",
+                "mediaserver": "https://api.bibletranslationtools.org",
                 "readerserver": "http://read.bibletranslationtools.org/u"
             },
             {
-                "name": "DCS",  
+                "name": "DCS",
                 "dataserver": "https://git.door43.org",
-                "mediaserver": "https://api.unfoldingword.org", 
-                "readerserver": "https://door43.org/u" 
+                "mediaserver": "https://api.unfoldingword.org",
+                "readerserver": "https://door43.org/u"
             }
         ],
         "group": "advanced",

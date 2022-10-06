@@ -151,6 +151,10 @@
                 notify: true,
                 observer: 'load'
             },
+            locale: {
+              type: Object,
+              value: {}
+            },
             backto: {
                 type: String,
                 value: ''
@@ -193,7 +197,7 @@
         },
 
         ready: function () {
-
+            this.set('locale', App.locale.dictionary);
         },
 
         createtitle: function (backto) {
