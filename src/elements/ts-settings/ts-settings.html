@@ -116,7 +116,7 @@
                         <template is="dom-if" if="{{_isVisible(setting.visible)}}">
                             <div id="{{setting.name}}" class="setting-group-item" on-tap="_runTapHandler" data-enabled={{_isEnabled(setting.enabled)}} data-group="[[group]]" data-list="[[list]]">
                                 <div class="setting-text avoid-clicks">
-                                    <div class="main-text">{{setting.mainText}}</div>
+                                    <div class="main-text">{{_lookupLocaleString(setting.mainText)}}</div>
                                     <div class="help-text">{{_computeHelpText(setting.*)}}</div>
                                 </div>
                                 <template is="dom-if" if="{{_isBoolean(setting.value)}}">
@@ -244,12 +244,21 @@
 
         _computeHelpText: function (setting) {
             var text;
-            if (typeof setting.base.value === "number" && setting.base.helpText) {
-                text = setting.base.helpText.replace("<int>", setting.base.value);
+            let helpText = this._lookupLocaleString(setting.base.helpText);
+            if (typeof setting.base.value === "number" && helpText) {
+                text = helpText.replace("<int>", setting.base.value);
             } else {
-                text = setting.base.helpText || setting.base.value.name || setting.base.value || setting.base.nullText;
+                text = helpText || setting.base.value.name || setting.base.value || setting.base.nullText;
             }
             return text;
+        },
+
+        _lookupLocaleString: function (keyValue) {
+            let localeText = this.locale[keyValue];
+            if (localeText === undefined) {
+              localeText = keyValue;
+            }
+            return localeText;
         },
 
         _isBoolean: function (value) {

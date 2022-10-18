@@ -1,8 +1,8 @@
 [
     {
         "name": "glmode",
-        "mainText": "locale.choose_source",
-        "helpText": "Display additional translation options for gateway languages",
+        "mainText": "glmode_maintext",
+        "helpText": "glmode_helptext",
         "value": false,
         "group": "general",
         "enabled": true,

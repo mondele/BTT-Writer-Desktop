@@ -1,4 +1,8 @@
 {
+  "__folder0": "user-setting",
+      "__file0": "user-setting",
+          "glmode_maintext": "Gateway Language Mode",
+          "glmode_helptext": "Display additional translation options for gateway languages",
   "__folder1": "ts-dialogs",
 
 		"__file1": "ts-conflict.html",

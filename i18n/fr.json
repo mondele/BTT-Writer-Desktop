@@ -1,4 +1,9 @@
 {
+  "__folder0": "user-setting",
+      "__file0": "user-setting",
+          "glmode_maintext": "Mode de Langue Portaille",
+          "glmode_helptext": "Montrer d'autres options pour les langues de portailles.",
+
   "__folder1": "ts-dialogs",
 
 		"__file1": "ts-conflict.html",
