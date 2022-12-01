@@ -168,7 +168,7 @@
           <ts-terms data-route="terms"></ts-terms>
       </neon-animated-pages>
       <div id="statusbar">
-          <span>{{locale.status}}: </span><span id="message">{{_lookupLocaleString(message.mainText)}}</span>
+          <span>{{locale.status}}: </span><span id="message">{{message}}</span>
       </div>
 
       <paper-dialog id="print" class="popup" modal="true" entry-animation="scale-up-animation" exit-animation="scale-down-animation">
@@ -295,7 +295,7 @@
           },
           message: {
               type: String,
-              value: "Idle"
+              value: "idle"
           }
       },
 

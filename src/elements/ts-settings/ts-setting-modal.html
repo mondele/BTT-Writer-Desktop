@@ -101,8 +101,8 @@
 		                </template>
 	                </paper-radio-group>
                 </template>
-                <template is="dom-if" if="{{text}}">
-                	<paper-input value="{{text}}"></paper-input>
+                <template is="dom-if" if="{{locale.text}}">
+                	<paper-input value="{{locale.text}}"></paper-input>
                     <template is="dom-if" if="{{default}}">
                         <div id="default">
                             Default value: {{default}}
@@ -111,8 +111,8 @@
                 </template>
             </div>
             <div id="footer">
-                <paper-button on-tap="cancel">Cancel</paper-button>
-                <paper-button on-tap="confirm">Confirm</paper-button>
+                <paper-button on-tap="cancel">{{locale.cancel}}</paper-button>
+                <paper-button on-tap="confirm">{{locale.confirm}}</paper-button>
             </div>
         </div>
 
