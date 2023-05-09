@@ -45,17 +45,14 @@
     <template>
 
         <div id="header">
-            <h2>{{locale.project_change}}</h2>
+            <h2>Project Change Detected</h2>
         </div>
         <div id="body">
-            <p>{{locale.project_label}} <span>[[currentproject.projectmeta.project.name]]</span><br>
-              {{locale.target_language}} <span>[[currentproject.projectmeta.target_language.name]]</span></p>
-            <p>{{locale.change_warning1}}</p>
-            <p>{{locale.change_warning2}}</p>
+            <p>There are changes to your translation of <span>[[currentproject.projectmeta.project.name]]</span> in <span>[[currentproject.projectmeta.target_language.name]]</span> on your account. Would you like to import those changes now?</p>
         </div>
         <div id="footer">
-            <paper-button dialog-dismiss>{{locale.no}}</paper-button>
-            <paper-button dialog-confirm on-tap="importchanges">{{locale.yes}}</paper-button>
+            <paper-button dialog-dismiss>No</paper-button>
+            <paper-button dialog-confirm on-tap="importchanges">Yes</paper-button>
         </div>
 
     </template>

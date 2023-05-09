@@ -285,7 +285,11 @@ ipcMain.on('save-as', function (event, arg) {
 ipcMain.on('open-file', function (event, arg) {
     dialog.showOpenDialog(mainWindow, arg.options)
         .then(function (value) {
+<<<<<<< HEAD
             event.returnValue = value.filePaths || value.bookmarks || false;
+=======
+            event.returnValue = !value.canceled && (value.filePaths || value.bookmarks) || false;
+>>>>>>> parent of b4eab4e... cherry-picking
         });
 });
 
