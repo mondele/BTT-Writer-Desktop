@@ -1,6 +1,12 @@
 {
   "__folder0": "user-setting",
-      "__file0": "user-setting",
+      "__file0": "user-setting.json",
+        "__GROUPS": "",
+          "gen_group": "Générale",
+          "about_group": "À propos",
+          "legal_group": "Légalités",
+          "advanced_group": "Avancé",
+
           "glmode_maintext": "Mode de Langue Portaille",
           "glmode_helptext": "Montrer d'autres options pour les langues de portailles.",
           "bemode_maintext": "Mode de Brouillon Aveugle",
@@ -26,6 +32,8 @@
             "information_level":"Renseignements",
             "warning_level":"Avertissements",
             "error_level": "Erreurs",
+          "developer_tools": "Outils des Développeurs",
+          "developer_tools_label": "ouvrez les outils des développeurs",
 
   "__folder1": "ts-dialogs",
 
@@ -213,7 +221,8 @@
               "no_warranty": "Aucune garantie n'est donnée. La licence peut ne pas vous accorder toutes les autorisations nécessaires à l'utilisation que vous souhaitez en faire. Par exemple, d'autres droits tels que la publicité, la vie privée ou les droits moraux peuvent limiter la façon dont vous utilisez le matériel.",
 
           "__file21": "ts-software.html",
-
+            "license_explanation": "Les licenses suivantes s'appliquent aux emballages de code et des biblioteques utilisés dans cette appli.",
+            "license_type": "Sorte de License",
       		"__file22": "ts-statement.html",
             "statement_head": "Déclaration de Foi",
             "statement_head2": "Croyances Essentielles",
@@ -312,7 +321,9 @@
       		"__file45": "ts-review.html",
       		"__file46": "ts-review-project.html",
       	"__folder10": "ts-settings",
-      		"__file47": "ts-setting-modal.html",
+      		"__file47": [ "ts-setting-modal.html",
+              "__addedLookupLocaleString_function", "true" 
+              ],
       		"__file48": "ts-settings.html",
       	"__folder11": "ts-translate",
       		"__folder12": "ts-chunk-mode",

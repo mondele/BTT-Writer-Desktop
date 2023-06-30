@@ -92,7 +92,7 @@
     <template>
 
         <div id="container">
-            <div id="header">{{heading}}</div>
+            <div id="header">{{_lookupLocaleString(heading)}}</div>
             <div id="body">
             	<template is="dom-if" if="{{selected}}">
 	            	<paper-radio-group selected="[[selected]]">
@@ -149,6 +149,10 @@
             },
             default: {
                 type: String
+            },
+            locale: {
+                type: Object,
+                value: {}
             }
         },
 
@@ -158,6 +162,15 @@
 					document.querySelector('paper-input').$.input.focus();
 				}
         	}, 30);
+            this.set('locale', App.locale.dictionary);
+        },
+
+        _lookupLocaleString: function (keyValue) {
+            let localeText = this.locale[keyValue];
+            if (localeText === undefined) {
+              localeText = keyValue;
+            }
+            return localeText;
         },
 
         onOpen: function () {

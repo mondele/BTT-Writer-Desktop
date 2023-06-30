@@ -51,6 +51,10 @@
         is: 'ts-attribution',
 
         properties: {
+            locale: {
+                type: Object,
+                value: {}
+            }
 
         },
 
@@ -62,7 +66,8 @@
                     event.preventDefault();
                     shell.openExternal(this.href);
                 });
-            }
+            };
+            this.set('locale', App.locale.dictionary);
         }
 
     });

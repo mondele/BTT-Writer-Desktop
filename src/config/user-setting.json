@@ -40,7 +40,7 @@
         "mainText": "sourcefont_maintext",
         "value": {"path": "default", "name": "Roboto"},
         "options": [],
-        "group": "general",
+        "group": "gen_group",
         "enabled": true,
         "visible": true
     },
@@ -49,7 +49,7 @@
         "mainText": "targetsize_maintext",
         "value": {"name": "size_normal"},
         "options": [{"name": "size_small"}, {"name": "size_normal"}, {"name": "size_large"}],
-        "group": "general",
+        "group": "gen_group",
         "enabled": true,
         "visible": true
     },
@@ -58,7 +58,7 @@
         "mainText": "sourcesize_maintext",
         "value": {"name": "size_normal"},
         "options": [{"name": "size_small"}, {"name": "size_normal"}, {"name": "size_large"}],
-        "group": "general",
+        "group": "gen_group",
         "enabled": true,
         "visible": true
     },
@@ -66,7 +66,7 @@
         "name": "datalocation",
         "mainText": "datalocation_maintext",
         "value": "~/BTT-Writer",
-        "group": "general",
+        "group": "gen_group",
         "enabled": true,
         "visible": true
     },
@@ -74,7 +74,7 @@
         "name": "appversion",
         "mainText": "appversion_maintext",
         "value": "0.0.0",
-        "group": "about",
+        "group": "about_group",
         "enabled": false,
         "visible": true
     },
@@ -82,7 +82,7 @@
         "name": "gitversion",
         "mainText": "gitversion_maintext",
         "value": "N/A",
-        "group": "about",
+        "group": "about_group",
         "enabled": false,
         "visible": true
     },
@@ -90,7 +90,7 @@
         "name": "datapath",
         "mainText": "datapath_maintext",
         "value": "/test/path",
-        "group": "about",
+        "group": "about_group",
         "enabled": false,
         "visible": true
     },
@@ -98,7 +98,7 @@
         "name": "license",
         "mainText": "license_button",
         "value": "",
-        "group": "legal",
+        "group": "legal_group",
         "enabled": true,
         "visible": true
     },
@@ -106,7 +106,7 @@
         "name": "guidelines",
         "mainText": "translation_button",
         "value": "",
-        "group": "legal",
+        "group": "legal_group",
         "enabled": true,
         "visible": true
     },
@@ -114,7 +114,7 @@
         "name": "statement",
         "mainText": "statement_button",
         "value": "",
-        "group": "legal",
+        "group": "legal_group",
         "enabled": true,
         "visible": true
     },
@@ -122,7 +122,7 @@
         "name": "software",
         "mainText": "software_licenses",
         "value": "",
-        "group": "legal",
+        "group": "legal_group",
         "enabled": true,
         "visible": true
     },
@@ -130,7 +130,7 @@
         "name": "attribution",
         "mainText": "attribution_label",
         "value": "",
-        "group": "legal",
+        "group": "legal_group",
         "enabled": true,
         "visible": true
     },
@@ -152,7 +152,7 @@
                 "readerserver": "https://door43.org/u"
             }
         ],
-        "group": "advanced",
+        "group": "advanced_group",
         "enabled": true,
         "visible": true
     },
@@ -161,7 +161,7 @@
         "mainText": "data_server_label",
         "value": "https://wacs.bibletranslationtools.org",
         "default": "https://wacs.bibletranslationtools.org",
-        "group": "advanced",
+        "group": "advanced_group",
         "enabled": true,
         "visible": true
     },
@@ -170,7 +170,7 @@
         "mainText": "media_server_label",
         "value": "https://api.bibletranslationtools.org",
         "default": "https://api.bibletranslationtools.org",
-        "group": "advanced",
+        "group": "advanced_group",
         "enabled": true,
         "visible": true
     },
@@ -179,7 +179,7 @@
         "mainText": "reader_server_label",
         "value": "http://read.bibletranslationtools.org/u",
         "default": "http://read.bibletranslationtools.org/u",
-        "group": "advanced",
+        "group": "advanced_group",
         "enabled": true,
         "visible": true
     },
@@ -188,15 +188,15 @@
         "mainText": "logging_level_label",
         "value": "Warnings",
         "options": ["information_level", "warning_level", "error_level"],
-        "group": "advanced",
+        "group": "advanced_group",
         "enabled": true,
         "visible": false
     },
     {
         "name": "developertools",
-        "mainText": "Developer Tools",
-        "helpText": "Opens the developer tools",
-        "group": "advanced",
+        "mainText": "developer_tools",
+        "helpText": "developer_tools_label",
+        "group": "advanced_group",
         "enabled": true,
         "visible": true
     },
@@ -204,7 +204,7 @@
         "name": "refreshsettings",
         "mainText": "Refresh Settings",
         "helpText": "Update user options to the most current",
-        "group": "advanced",
+        "group": "advanced_group",
         "enabled": true,
         "visible": false
     }

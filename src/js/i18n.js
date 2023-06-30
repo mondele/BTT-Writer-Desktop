@@ -50,7 +50,7 @@ function supportedLocales (dir) {
  * @param {Locale}
  */
 function chooseBestLocale(dir, code) {
-    let defaultLocale = new locale2.Locales(code || 'en');
+    let defaultLocale = new locale2.Locales(code || 'fr');
     return defaultLocale.best(supportedLocales(dir));
 }
 

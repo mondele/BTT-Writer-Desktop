@@ -110,7 +110,7 @@
         </div>
         <div class="body">
             <template is="dom-repeat" items="[[settings]]" index-as="group">
-                <div class="setting-group-header">{{_capitalize(item.group)}}</div>
+                <div class="setting-group-header">{{_lookupLocaleString(item.group)}}</div>
                 <div class="setting-group-body">
                     <template is="dom-repeat" items="{{item.list}}" as="setting" index-as="list">
                         <template is="dom-if" if="{{_isVisible(setting.visible)}}">
@@ -158,6 +158,10 @@
             backto: {
                 type: String,
                 value: ''
+            },
+            locale: {
+                type: Object,
+                value: {}
             },
             options: {
                 type: Object,
