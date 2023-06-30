@@ -135,6 +135,10 @@
                 value: {},
                 notify: true
             },
+            locale: {
+                type: Object,
+                value: {}
+            },
             p: {
                 type: Object,
                 value: function () {
@@ -182,6 +186,7 @@
 
         ready: function () {
             this.$.spinner.active = false;
+            this.set('locale', App.locale.dictionary);
         },
 
         attached: function () {
