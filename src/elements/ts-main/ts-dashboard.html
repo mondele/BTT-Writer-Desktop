@@ -493,9 +493,9 @@
                           errmessage = this._lookupLocaleString("connection_error");
                       }
                       if (err.syscall === "read") {
-                          errmessage = "Lost connection to server";
+                          errmessage = this._lookupLocaleString("read_error");
                       }
-                      mythis.showErrorMessage('Update Failed', errmessage, err);
+                      mythis.showErrorMessage(this._lookupLocaleString("update_failed"), errmessage, err);
                   });
           }, 500);
       },
@@ -530,10 +530,10 @@
                       return mythis.sortProjects(newlist);
                   })
                   .then(function () {
-                      mythis.showMessage('Project Deleted', 'Your project has been successfully deleted.');
+                      mythis.showMessage(this._lookupLocaleString("project_deleted1"), this._lookupLocaleString("project_deleted2"));
                   })
                   .catch(function(err) {
-                      mythis.showErrorMessage('Delete Failed', 'An error occurred while trying to delete your project', err);
+                      mythis.showErrorMessage(this._lookupLocaleString('delete_failed1'), this._lookupLocaleString('delete_failed2'), err);
                   });
           }, 500);
       },
@@ -583,10 +583,10 @@
                       return mythis.sortProjects(newlist);
                   })
                   .then(function () {
-                      mythis.showConflictsMessage('Change Complete', 'Your project has been changed.', conflicts);
+                      mythis.showConflictsMessage(this._lookupLocaleString("project_changed1"), this._lookupLocaleString("project_changed2"), conflicts);
                   })
                   .catch(function(err) {
-                      mythis.showErrorMessage('Change Failed', 'An error occurred while trying to change the project', err);
+                      mythis.showErrorMessage(this._lookupLocaleString("change_failed1"), this._lookupLocaleString("change_failed2"), err);
                   });
           }, 500);
       },
@@ -662,7 +662,7 @@
                       }
                   })
                   .catch(function(err) {
-                      mythis.showErrorMessage("Import Failed", "An error occurred while importing your project", err && err.error ? err.error : err);
+                      mythis.showErrorMessage(this._lookupLocaleString("import_failed1"), this._lookupLocaleString("import_failed2"), err && err.error ? err.error : err);
 
                       return mythis.clearTempDir();
                   });
@@ -695,13 +695,13 @@
                       }))
                   })
                   .catch(function(err) {
-                      var errmessage = 'An error occurred while importing your project';
+                      var errmessage = this._lookupLocaleString('import_failed2');
 
-                      if (err.includes("Error while extracting file")) {
+                      if (err.includes(this._lookupLocaleString("extraction_error"))) {
                           errmessage = err;
                       }
 
-                      mythis.showErrorMessage('Import Failed', errmessage, err);
+                      mythis.showErrorMessage(this._lookupLocaleString('import_failed1'), errmessage, err);
 
                       return mythis.clearTempDir();
                   });
@@ -762,10 +762,10 @@
                       return mythis.sortProjects(newlist);
                   })
                   .then(function () {
-                      mythis.showConflictsMessage("Import Complete", "Your project has been successfully imported.", conflicts);
+                      mythis.showConflictsMessage(this._lookupLocaleString("project_imported1"), this._lookupLocaleString("project_imported2"), conflicts);
                   })
                   .catch(function(err) {
-                      mythis.showErrorMessage("Import Failed", "An error occurred while importing your project", err && err.error ? err.error : err);
+                      mythis.showErrorMessage(this._lookupLocaleString("import_failed1"), this._lookupLocaleString("import_failed2"), err && err.error ? err.error : err);
 
                       return mythis.clearTempDir();
                   });
@@ -844,10 +844,10 @@
                       return mythis.sortProjects(newlist);
                   })
                   .then(function () {
-                      mythis.showMessage('Import Complete', 'Your file has been imported. Please review it carefully. If it was not formatted properly, text may not appear as desired.');
+                      mythis.showMessage(this._lookupLocaleString("project_imported1"), this._lookupLocaleString("project_imported3"));
                   })
                   .catch(function (err) {
-                      mythis.showErrorMessage('Import Failed', 'Error occurred importing project', err);
+                      mythis.showErrorMessage(this._lookupLocaleString('import_failed1'), this._lookupLocaleString("import_failed2"), err);
 
                       if (overwrite) {
                           return App.importManager.extractBackup(backupPath)
@@ -901,10 +901,10 @@
           setTimeout(function() {
               return App.dataManager.importContainer(filePath)
                   .then(function() {
-                      mythis.showMessage('Import Complete', 'Your source text has been successfully imported.');
+                      mythis.showMessage(this._lookupLocaleString("project_imported1"), this._lookupLocaleString("source_imported"));
                   })
                   .catch(function(err) {
-                      var errmessage = 'An error occurred while importing your source text.';
+                      var errmessage = this._lookupLocaleString("source_import_failed");
 
                       if (err.toString()) {
                           errmessage = err.toString();
@@ -1000,7 +1000,7 @@
           var mythis = this;
           var projectmeta = this.currentproject.projectmeta;
           var defaultPath = App.configurator.getUserPath('datalocation', 'backups', projectmeta.unique_id);
-          var filePath = App.ipc.sendSync('save-as', {options: {defaultPath: defaultPath, filters: [{name: 'Tstudio Files', extensions: ['tstudio']}]}});
+          var filePath = App.ipc.sendSync('save-as', {options: {defaultPath: defaultPath, filters: [{name: this._lookupLocaleString("tstudio_files"), extensions: ['tstudio']}]}});
           if (!filePath) {
               return;
           }
@@ -1011,10 +1011,10 @@
           setTimeout(function() {
               return App.exportManager.backupTranslation(projectmeta, filePath)
                   .then(function () {
-                      mythis.showMessage('Project File Complete', 'Your project has been successfully saved.');
+                      mythis.showMessage(this._lookupLocaleString("project_export1"), this._lookupLocaleString("project_export2"));
                   })
                   .catch(function (err) {
-                      mythis.showErrorMessage('File Failed', 'An error occurred while trying to save your project', err);
+                      mythis.showErrorMessage(this._lookupLocaleString('project_failed1'), this._lookupLocaleString('project_failed2'), err);
                   });
           }, 500);
       },
