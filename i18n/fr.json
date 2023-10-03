@@ -304,6 +304,9 @@
             "project_failed1": "Fichier Echoué",
             "project_failed2": "Une erreur lors du sauvegard du projet",
 
+            "conflicts_exist": "Il y a de Conflits",
+            "conflicts_request": "Il faut resoudre tout conflit avant d'exporter en USFM.",
+
       		"__file29": "ts-splash.html",
       	"__folder6": "ts-new",
       		"__file30": "ts-book-menu.html",

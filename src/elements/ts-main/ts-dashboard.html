@@ -1107,7 +1107,7 @@
           var filePath;
 
           if (conflicts) {
-              mythis.showMessage("Conflicts Exist", "You must resolve all conflicts before exporting to USFM.");
+              mythis.showMessage(mythis._lookupLocaleString("conflicts_exist"),mythis._lookupLocaleString("conflicts_request"));
               return;
           }
 
