@@ -121,7 +121,7 @@
             "home_welcome2": "Vous pouvez créer un nouveau projet n'importe quand en cliquant sur le bouton bleu en haut-droit.",
             "start_new_project": "Créer un nouveau projet",
 
-            "columns1": "Colonnes à Trier",
+            "columns1": "Trier les Colonnes Par",
             "sort1": "Projet Avant Langue",
             "sort2": "Langue Avant Projet",
             "sort3": "Progres Avant Projet",
@@ -254,8 +254,8 @@
 
           "__file28": "ts-dashboard.html",
             "conflicts": "Conflits de Blocs",
-              "single_chunk_conflict_message": "'Il y a '+ conflicts.length + ' bloc qui contient un nouveau conflit qui demande votre attention.'",
-              "multiple_chunk_conflict_message": "'Il y a '+ conflicts.length + ' blocs qui contienent de nouveaux conflits qui demandent votre attention.'",
+              "single_chunk_conflict_message": " Il y a 1 bloc qui contient un nouveau conflit qui demande votre attention.",
+              "multiple_chunk_conflict_message": "'Il y a plusieurs blocs qui contienent de nouveaux conflits qui demandent votre attention.'",
             "import_complete": "Importation Complète",
               "import_complete_text": "Votre projet est importé avec succès",
             "import_failed": "Echec d'Importation",
@@ -270,7 +270,16 @@
             "read_error": "Connexion au serveur perdue",
             "update_failed": "Echec de Mise à Jour",
             "source_update_status": "Mise à jour de la list des Textes Sources. Cela peut prendre un peu de temps. S'il vous plaît, attendez...",
-
+            "source_loading_status": "En cours de charger les textes sources. Patientez, svp ...",
+            "deleting_project_status": "En cours d'effacer le projet. Patientez, svp ...",
+            "changing_project_status": "En cours de changer le projet. Patientez, svp ...",
+            "importing_status": "En cours d'importer. Patientez, svp ...",
+            "importing_source_status": "En cours d'importer le texte source. Patientez, svp ...",
+            "creating_project_file_status": "En cours de créer le fichier projet. Patientez, svp ...",
+            "preparing_print_status": "En cours de preparer l'impression. Patientez, svp ...",
+            "exporting_project_status": "En cours d'exporter le projet. Patientez, svp ...",
+            "sending_feedback_status": "En cours d'envoyer la réaction. Patientez, svp ...",
+            "new_sources_available": " textes sources nouvea sont disponible pour téléchargement.",
 
       		"__file29": "ts-splash.html",
       	"__folder6": "ts-new",
