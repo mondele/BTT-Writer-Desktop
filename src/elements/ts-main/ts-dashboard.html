@@ -479,18 +479,18 @@
                       var diff = after.resource_count_level3 - before.resource_count_level3;
                       var msg = diff + this._lookupLocaleString('new_sources_available');
                       if (diff < 1) {
-                          msg = 'No new Source Texts have been added.';
+                          msg = this._lookupLocaleString('no_sources_available');
                       }
                       if (diff === 1) {
-                          msg = '1 new Source Text is available to be downloaded.';
+                          msg = this._lookupLocaleString('one_source_available');
                       }
                       mythis.set('route', 'updates');
-                      mythis.showMessage('Update Complete', msg);
+                      mythis.showMessage(this._lookupLocaleString('update_complete'), msg);
                   })
                   .catch(function (err) {
-                      var errmessage = 'An error occurred while updating';
+                      var errmessage = this._lookupLocaleString('update_error');
                       if (err.syscall === "getaddrinfo") {
-                          errmessage = "Unable to connect to server";
+                          errmessage = this._lookupLocaleString("connection_error");
                       }
                       if (err.syscall === "read") {
                           errmessage = "Lost connection to server";
