@@ -304,6 +304,9 @@
          "project_failed1": "File Failed",
          "project_failed2": "An error occurred while trying to save your project",
 
+         "conflicts_exist":"Conflicts Exist",
+         "conflicts_request": "You must resolve all conflicts before exporting to USFM.",
+
 
 		"__file29": "ts-splash.html",
 
