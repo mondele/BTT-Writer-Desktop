@@ -1125,14 +1125,14 @@
           setTimeout(function() {
               return App.exportManager.exportTranslation(translation, projectmeta, filePath, mediaServer)
                   .then(function () {
-                      mythis.showMessage("Project Exported", "Your project has been successfully exported to a file.");
+                      mythis.showMessage(mythis._lookupLocaleString("project_export3"), mythis._lookupLocaleString("project_export4"));
                   })
                   .catch(function (err) {
-                      var errmessage = "An error occurred while trying to export your project";
+                      var errmessage = mythis._lookupLocaleString("project_failed3");
                       if(err !== null) {
                           errmessage = err;
                       }
-                      mythis.showErrorMessage("Export Failed", errmessage, err);
+                      mythis.showErrorMessage(mythis._lookupLocaleString("project_failed4"), errmessage, err);
                   });
           }, 500);
       },
@@ -1163,11 +1163,11 @@
                       } catch (e) {}
 
                       if (response && response.url && response.repository_url) {
-                          App.reporter.logNotice(response.url, 'Feedback Sent');
-                          mythis.showMessage('Feedback Sent', 'Your feedback has been successfully sent.');
+                          App.reporter.logNotice(response.url, mythis._lookupLocaleString("feedback_sent"));
+                          mythis.showMessage(mythis._lookupLocaleString("feedback_sent")), mythis._lookupLocaleString("feedback_sent2");
                       } else {
-                          !response && App.reporter.logWarning(res, 'Feedback failed with invalid JSON response');
-                          mythis.showErrorMessage('Feedback Failed', 'Unable to post the feedback. Please try again.', response || null);
+                          !response && App.reporter.logWarning(res, mythis._lookupLocaleString("feedback_failed2"));
+                          mythis.showErrorMessage(mythis._lookupLocaleString("feedback_failed"), mythis._lookupLocaleString("feedback_failed3"), response || null);
                       }
                   })
                   .catch(function (err) {

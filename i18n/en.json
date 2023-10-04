@@ -294,15 +294,27 @@
          "creating_project_file_status": "Creating Project File.  Please wait...",
          "preparing_print_status": "Preparing to Print. Please wait...",
          "exporting_project_status": "Exporting Project.  Please wait...",
+
          "sending_feedback_status": "Sending Feedback. Please wait...",
+         "feedback_sent": "Feedback Sent",
+         "feedback_sent2": "Your feedback has been successfully sent.",
+         "feedback_failed": "Feedback Failed",
+         "feedback_failed2": "Feedback failed with invalid JSON response",
+         "feedback_failed3": "Unable to post the feedback. Please try again.",
+
          "new_sources_available": " new Source Texts are available to be downloaded.",
          "no_sources_available": "No new Source Texts have been added.",
          "one_source_available": "One new Source Text is available to be downloaded.",
          "tstudio_files": "Tstudio Files",
          "project_export1": "Project File Complete",
          "project_export2": "Your project has been successfully saved.",
+         "project_export3": "Project Exported",
+         "project_export4": "Your project has been successfully exported to a file.",
+
          "project_failed1": "File Failed",
          "project_failed2": "An error occurred while trying to save your project",
+         "project_failed3": "An error occurred while trying to export your project",
+         "project_failed4": "Export Failed",
 
          "conflicts_exist":"Conflicts Exist",
          "conflicts_request": "You must resolve all conflicts before exporting to USFM.",
