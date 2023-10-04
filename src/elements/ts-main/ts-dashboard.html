@@ -1171,17 +1171,17 @@
                       }
                   })
                   .catch(function (err) {
-                      var errmessage = 'An error occurred while sending feedback';
+                      var errmessage = mythis._lookupLocaleString("feedback_failed4");
                       if (err.syscall === "getaddrinfo") {
-                          errmessage = "Unable to connect to server";
+                          errmessage = mythis._lookupLocaleString("connection_error");
                       }
                       if (err.syscall === "read") {
-                          errmessage = "Lost connection to server";
+                          errmessage = mythis._lookupLocaleString("read_error");
                       }
-                      mythis.showErrorMessage('Feedback Failed', errmessage, err);
+                      mythis.showErrorMessage(mythis._lookupLocaleString("feedback_failed"), errmessage, err);
                   });
           } else {
-              mythis.showErrorMessage('Feedback Failed', 'You are not set up with a token to send feedback.', null);
+              mythis.showErrorMessage(mythis._lookupLocaleString('feedback_failed'), mythis._lookupLocaleString("token_error"), null);
           }
       },
 
@@ -1284,7 +1284,7 @@
           if (libraryBuild != appData.build) {
               var translations = [];
 
-              App.ipc.send('loading-status', 'Updating Index File...');
+              App.ipc.send('loading-status', this._lookupLocaleString("index_update_status"));
 
               if (parseInt(libraryBuild) >= 110) {
                   translations = App.dataManager.getTranslations();
@@ -1338,7 +1338,7 @@
                       return mythis.clearTempDir();
                   })
                   .then(function () {
-                      App.ipc.send('loading-status', 'Migrating Projects...');
+                      App.ipc.send('loading-status', mythis._lookupLocaleString("project_migration_status"));
                       return App.projectsManager.migrateTargetTranslationsList();
                   })
                   .then(function () {

@@ -301,6 +301,8 @@
             "feedback_failed": "Réaction Echoué",
             "feedback_failed2": "Réaction échoué avec mauvaise réponse JSON",
             "feedback_failed3": "Impossible de trasmettre la réaction. Veuillez essayer encore.",
+            "feedback_failed4": "Une erreur lors de la transmission de réaction",
+            "token_error": "Vous n'avez pas un jeton pour transmettre les réactions."
 
             "new_sources_available": " textes sources nouveaux sont disponible pour téléchargement.",
             "no_sources_available": "Il n'y a pas de nouveaux textes sources.",
@@ -318,6 +320,9 @@
 
             "conflicts_exist": "Il y a de Conflits",
             "conflicts_request": "Il faut resoudre tout conflit avant d'exporter en USFM.",
+
+            "index_update_status": "Mise à Jour des Indices",
+            "project_migration_status": "Migration des Projets en Cours...",
 
       		"__file29": "ts-splash.html",
       	"__folder6": "ts-new",

@@ -301,6 +301,8 @@
          "feedback_failed": "Feedback Failed",
          "feedback_failed2": "Feedback failed with invalid JSON response",
          "feedback_failed3": "Unable to post the feedback. Please try again.",
+         "feedback_failed4": "An error occurred while sending feedback",
+         "token_error": "You are not set up with a token to send feedback.",
 
          "new_sources_available": " new Source Texts are available to be downloaded.",
          "no_sources_available": "No new Source Texts have been added.",
@@ -319,6 +321,8 @@
          "conflicts_exist":"Conflicts Exist",
          "conflicts_request": "You must resolve all conflicts before exporting to USFM.",
 
+         "index_update_status": "Updating Index File...",
+         "project_migration_status": "Migrating Projects...",
 
 		"__file29": "ts-splash.html",
 
