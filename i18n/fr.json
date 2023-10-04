@@ -302,7 +302,7 @@
             "feedback_failed2": "Réaction échoué avec mauvaise réponse JSON",
             "feedback_failed3": "Impossible de trasmettre la réaction. Veuillez essayer encore.",
             "feedback_failed4": "Une erreur lors de la transmission de réaction",
-            "token_error": "Vous n'avez pas un jeton pour transmettre les réactions."
+            "token_error": "Vous n'avez pas de jeton pour transmettre les réactions.",
 
             "new_sources_available": " textes sources nouveaux sont disponible pour téléchargement.",
             "no_sources_available": "Il n'y a pas de nouveaux textes sources.",
@@ -321,8 +321,22 @@
             "conflicts_exist": "Il y a de Conflits",
             "conflicts_request": "Il faut resoudre tout conflit avant d'exporter en USFM.",
 
+            "zip_format": "Fichiers Zip",
+            "usfm_format": "Fichiers USFM",
+
             "index_update_status": "Mise à Jour des Indices",
             "project_migration_status": "Migration des Projets en Cours...",
+
+            "git_version": "Version de git",
+
+            "get_user_settings": "Récupération de Paramètres d'Utilisateur...",
+            "get_project_list": "Récupération de la Liste des Projets...",
+            "get_resource_containers": "Ouverture des conteneurs de ressources...",
+            "update_project_list": "Mise à jour de la liste des Projets...",
+            "make_backups": "Creation de Sauveguarde Automatique...",
+
+            "something_broke": "Quelque chose ne va pas.",
+            "startup_error": "Erreur lors du démarrage",
 
       		"__file29": "ts-splash.html",
       	"__folder6": "ts-new",

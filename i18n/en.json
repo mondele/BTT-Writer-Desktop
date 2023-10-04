@@ -321,8 +321,22 @@
          "conflicts_exist":"Conflicts Exist",
          "conflicts_request": "You must resolve all conflicts before exporting to USFM.",
 
+         "zip_format": "Zip Files",
+         "usfm_format": "USFM Files",
+
          "index_update_status": "Updating Index File...",
          "project_migration_status": "Migrating Projects...",
+
+         "git_version": "Git Version",
+
+         "get_user_settings": "Retrieving User Settings...",
+         "get_project_list": "Retrieving Project List...",
+         "get_resource_containers": "Opening resource containers...",
+         "update_project_list": "Updating Project List...",
+         "make_backups": "Creating Auto Backups...",
+
+         "something_broke": "Something broke.",
+         "startup_error": "Error on startup",
 
 		"__file29": "ts-splash.html",
 

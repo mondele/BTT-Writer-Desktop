@@ -1112,9 +1112,9 @@
           }
 
           if (projectmeta.format === 'markdown') {
-              filePath = App.ipc.sendSync('save-as', {options: {defaultPath: defaultPath, filters: [{name: 'Zip Files', extensions: ['zip']}]}});
+              filePath = App.ipc.sendSync('save-as', {options: {defaultPath: defaultPath, filters: [{name: mythis._lookupLocaleString("zip_format"), extensions: ['zip']}]}});
           } else {
-              filePath = App.ipc.sendSync('save-as', {options: {defaultPath: defaultPath, filters: [{name: 'USFM Files', extensions: ['usfm']}]}});
+              filePath = App.ipc.sendSync('save-as', {options: {defaultPath: defaultPath, filters: [{name: mythis._lookupLocaleString("usfm_format"), extensions: ['usfm']}]}});
           }
           if (!filePath) {
               return;
@@ -1284,7 +1284,7 @@
           if (libraryBuild != appData.build) {
               var translations = [];
 
-              App.ipc.send('loading-status', this._lookupLocaleString("index_update_status"));
+              App.ipc.send('loading-status', mythis._lookupLocaleString("index_update_status"));
 
               if (parseInt(libraryBuild) >= 110) {
                   translations = App.dataManager.getTranslations();
@@ -1381,8 +1381,8 @@
 
           return App.gitManager.verifyGit()
               .then(function (version) {
-                  App.ipc.send('loading-status', 'Retrieving User Settings...');
-                  App.reporter.logNotice('Git Version ' + version);
+                  App.ipc.send('loading-status', mythis._lookupLocaleString("get_user_settings"));
+                  App.reporter.logNotice(mythis._lookupLocaleString("git_version") + version);
                   mythis.createInitialSettings(version);
                   mythis.checkUser(App.configurator.getValue("userdata"));
 
@@ -1393,21 +1393,21 @@
                       App.ipc.send('fire-reload');
                       return Promise.resolve(false);
                   } else {
-                      App.ipc.send('loading-status', 'Retrieving Project List...');
+                      App.ipc.send('loading-status', mythis._lookupLocaleString("get_project_list"));
                       return App.projectsManager.loadTargetTranslationsList()
                           .then(function (list) {
-                              App.ipc.send('loading-status', 'Opening resource containers...');
+                              App.ipc.send('loading-status', mythis._lookupLocaleString("get_resource_containers"));
                               return mythis.checkAllContainers(list);
                           })
                           .then(function (list) {
-                              App.ipc.send('loading-status', 'Updating Project List...');
+                              App.ipc.send('loading-status', mythis._lookupLocaleString("update_project_list"));
                               return _.compact(list.map(App.projectsManager.updateManifestToMeta, App.projectsManager));
                           })
                           .then(function (list) {
                               return mythis.sortProjects(list);
                           })
                           .then(function (list) {
-                              App.ipc.send('loading-status', 'Creating Auto Backups...');
+                              App.ipc.send('loading-status', mythis._lookupLocaleString("make_backups"));
                               return App.exportManager.backupAllTranslations(list);
                           })
                           .then(function () {
@@ -1417,8 +1417,8 @@
                   }
               })
               .catch(function (err) {
-                  var msg = 'Something broke.';
-                  err && err.stack && App.reporter.logError(err.stack, 'Error on startup');
+                  var msg = mythis._lookupLocaleString("something_broke");
+                  err && err.stack && App.reporter.logError(err.stack, mythis._lookupLocaleString("startup_error"));
 
                   if (err && typeof err === 'string') {
                       msg = err;
@@ -1426,7 +1426,7 @@
                       msg = err.toString();
                   }
 
-                  mythis.showErrorMessage('Error on startup', msg, err);
+                  mythis.showErrorMessage(mythis._lookupLocaleString("startup_error"), msg, err);
                   App.ipc.send('main-loading-done');
                   mythis.$.home.setsortfields();
               });
