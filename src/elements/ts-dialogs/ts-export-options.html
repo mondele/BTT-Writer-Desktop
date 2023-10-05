@@ -94,7 +94,7 @@
             </div>
         </div>
         <div id="footer">
-            <paper-button dialog-dismiss>Cancel</paper-button>
+            <paper-button dialog-dismiss>{{locale.cancel}}</paper-button>
         </div>
 
     </template>
@@ -109,6 +109,10 @@
 
         properties: {
             currentproject: {
+                type: Object,
+                value: {}
+            },
+            locale: {
                 type: Object,
                 value: {}
             }
@@ -150,7 +154,8 @@
                     event.preventDefault();
                     shell.openExternal(this.href);
                 });
-            }
+            };
+            this.set('locale', App.locale.dictionary);
         }
 
     });

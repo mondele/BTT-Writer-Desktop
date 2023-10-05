@@ -59,7 +59,7 @@
           "to_pdf_text": "Crée un fichier .pdf de votre projet",
         "to_project": "Exporter en Fichier Projet",
           "to_project_text": "Crée une copie de votre projet",
-
+        
       "__file4": "ts-feedback.html",
         "feedback": "Réaction",
         "internet_warning": "On va utiliser votre reseau internet",
@@ -346,6 +346,7 @@
 
           "__file32": "ts-new.html",
             "new_project": "Projet Nouveau",
+            "overwrite_query": "Cette traduction cible éxiste déjà. Ecrasez?",
 
           "__file33": "ts-project-menu.html",
       		"__file34": "ts-type-menu.html",
@@ -460,7 +461,7 @@
     "idle": "Inactif",
     "update": "Actualiser",
     "import": "Importer",
-    "translationAcademy": "translationAcademy",
+    "translationAcademy": "translationAcademy (翻譯學院)",
     "logout": "Se Déconnecter",
     "settings": "Parametres"
   }

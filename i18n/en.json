@@ -349,6 +349,7 @@
 
 		"__file32": "ts-new.html",
       "new_project": "New Project",
+      "overwrite_query": "This target translation already exists. Overwrite?",
 
 		"__file33": "ts-project-menu.html",
 		"__file34": "ts-type-menu.html",
