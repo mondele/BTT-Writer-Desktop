@@ -1,5 +1,5 @@
 {
-  "__folder0": "user-setting",
+  "__folder0": "src/config",
       "__file0": "user-setting.json",
         "__GROUPS": "",
           "gen_group": "Générale",
@@ -441,6 +441,7 @@
          		"__file72": "ts-target-words.html",
          		"__file73": "ts-verse-marker.html",
         		"__file74": "ts-translate.html",
+              "loading_project": "En cours de charger le projet",
 
         		"__file75": "ts-translate-sidebar.html",
               "home": "Acceuil",
@@ -452,10 +453,6 @@
           	"__file77": "ts-update-level-two.html",
           	"__file78": "ts-update-results.html",
             "__file79": "ts-updates.html",
-
-            "__folder20": "config",
-                "__file80": "user-setting.json",
-                  "glmode_main": "Mode de Gateway Language",
 
     "status": "Situation",
     "idle": "Inactif",
